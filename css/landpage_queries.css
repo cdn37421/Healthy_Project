@@ -110,7 +110,7 @@
       }
 
       
-    
+     
 }
 
 @media (max-width: 44em) {
@@ -129,6 +129,9 @@
 /* Phone */
 /**************************/
 @media (max-width: 34em) {
+  .heading-primary{
+    font-size: 4.2rem;
+  }
     .grid {
       row-gap: 4.8rem;
     }

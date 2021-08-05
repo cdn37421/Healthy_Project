@@ -31,16 +31,10 @@ obs.observe(sectionHeroEl);
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
 
-const btnNavEl = document.querySelector(".btn-nav");
-const btnMobileNavEl = document.querySelector(".btn-mobile-nav");
+const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
 btnNavEl.addEventListener("click", function () {
-  console.log("test");
-  headerEl.classList.toggle("btn-close-other-nav");
-});
-btnMobileNavEl.addEventListener("click", function () {
-  console.log("test");
   headerEl.classList.toggle("nav-open");
 });
 
