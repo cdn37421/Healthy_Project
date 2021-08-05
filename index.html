@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="img/favi-logo.png" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/landpage.css" />
@@ -25,7 +31,14 @@
     ></script>
     <script defer src="/script.js"></script>
 
-    <title>Healthy Style</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Healthy Style&mdash; Healthy 365 days!</title>
   </head>
   <body>
     <header class="header">
@@ -34,13 +47,29 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">如何使用</a></li>
-          <li><a class="main-nav-link" href="#">醫生陣容</a></li>
-          <li><a class="main-nav-link" href="#">推薦</a></li>
-          <li><a class="main-nav-link" href="#">價格</a></li>
-          <li>
-            <a class="main-nav-link nav-cta btn-nav" href="#">其他選項</a>
+          <li><a class="main-nav-link" href="#how">如何使用</a></li>
+          <li><a class="main-nav-link" href="#doctors">醫生陣容</a></li>
+          <li><a class="main-nav-link" href="#testimonials">推薦</a></li>
+          <li><a class="main-nav-link" href="#pricing">價格</a></li>
+          <!-- bootstrap -->
+          <li class="dropdown">
+            <a
+              class="main-nav-link nav-cta dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >其他選項</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">登入</a></li>
+              <li><a class="dropdown-item" href="#cta">建立新帳號</a></li>
+              <li><a class="dropdown-item" href="#">加入合作夥伴</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">關於我們</a></li>
+            </ul>
           </li>
+          <!-- bootstrap -->
         </ul>
       </nav>
 
@@ -61,7 +90,7 @@
             <a href="/appointment.html" class="btn btn--full margin-right-sm"
               >預約診療</a
             >
-            <a href="#" class="btn btn--outline">更多資訊 &darr;</a>
+            <a href="#doctors" class="btn btn--outline">更多資訊 &darr;</a>
             <div class="patients">
               <div class="patients-imgs">
                 <img src="img/customers/customer-1.jpg" alt="Customer photo" />
@@ -81,7 +110,7 @@
       </section>
 
       <!-- featured  -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">如何使用</span>
           <h2 class="heading-secondary">只要簡單三個步驟，開始預約看診</h2>
@@ -147,7 +176,7 @@
         </div>
       </section>
       <!-- doctors -->
-      <section class="section-doctors">
+      <section class="section-doctors" id="doctors">
         <div class="container center-text">
           <span class="subheading">醫生陣容</span>
           <h2 class="heading-secondary">我們擁有最專業的醫生團隊</h2>
@@ -264,7 +293,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">好評推薦</span>
           <h2 class="heading-secondary">聽聽我們的評價怎麼樣</h2>
@@ -330,7 +359,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">價格</span>
           <h2 class="heading-secondary">開始享受我們的服務</h2>
@@ -426,7 +455,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -475,7 +504,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container grid grid--footer">
         <div class="logo-col">
           <a href="#" class="footer-logo">
@@ -505,7 +534,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2021 by Health, Inc. All rights reserved.
+            Copyright &copy; <span class="year">2021</span> by Healthy, Inc. All
+            rights reserved.
           </p>
         </div>
         <div class="address-col">
