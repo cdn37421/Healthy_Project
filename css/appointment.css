@@ -43,4 +43,19 @@
     
   }
 
- 
+.pdf-link{
+  text-decoration: none;
+  font-size: 2.4rem;
+    
+}
+
+.pdf-link:link,
+.pdf-link:visited{
+  
+  color: #fa5252;
+}
+
+.pdf-link:hover,
+.pdf-link:active {
+  color: #c92a2a;
+}
