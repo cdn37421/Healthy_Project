@@ -13,6 +13,7 @@
     <link rel="icon" href="img/favi-logo.png" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/landpage.css" />
+    <link rel="stylesheet" href="css/landpage_queries.css" />
 
     <script
       type="module"
@@ -22,6 +23,7 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="/script.js"></script>
 
     <title>Healthy Style</title>
   </head>
@@ -36,9 +38,16 @@
           <li><a class="main-nav-link" href="#">醫生陣容</a></li>
           <li><a class="main-nav-link" href="#">推薦</a></li>
           <li><a class="main-nav-link" href="#">價格</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">免費試用</a></li>
+          <li>
+            <a class="main-nav-link nav-cta btn-nav" href="#">其他選項</a>
+          </li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -328,7 +337,7 @@
         </div>
 
         <div class="container grid grid--2-cols margin-bottom-md">
-          <div class="princing-plan princing-plan--starter">
+          <div class="princing-plan princing-plan--free">
             <header class="plan-header">
               <p class="plan-name">免費會員</p>
               <p class="plan-price"><span>$</span>0</p>
@@ -357,7 +366,7 @@
             </div>
           </div>
 
-          <div class="princing-plan princing-plan--complete">
+          <div class="princing-plan princing-plan--pay">
             <header class="plan-header">
               <p class="plan-name">付費會員</p>
               <p class="plan-price"><span>$</span>499</p>
