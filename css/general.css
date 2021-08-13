@@ -256,6 +256,9 @@ body {
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
 }
+.margin-bottom-sm {
+  margin-bottom: 2.4rem !important;
+}
 
 .center-text {
   text-align: center;
